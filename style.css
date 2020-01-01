@@ -945,18 +945,13 @@ img {
     justify-content: center;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
+    font-size: 14px;
+    color: #ffffff;
+    letter-spacing: 3px;
 }
 
 .single-insta-feed .catagory-title:hover {
     background-color: #30336b;
-}
-
-.single-insta-feed .catagory-title a {
-    font-size: 10px;
-    color: #ffffff;
-    letter-spacing: 3px;
-    display: inline-block;
-    text-transform: uppercase;
 }
 
 /* Contact Area CSS */
