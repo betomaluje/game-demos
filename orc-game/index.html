@@ -3,19 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Alberto Maluje | Orc</title>
+    <title>Unity WebGL Player | Orco</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140320451-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-140320451-1');
-    </script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
@@ -34,11 +24,11 @@
     </div>
     <script>
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Orc.loader.js";
+      var loaderUrl = buildUrl + "/orc-game.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Orc.data.gz",
-        frameworkUrl: buildUrl + "/Orc.framework.js.gz",
-        codeUrl: buildUrl + "/Orc.wasm.gz",
+        dataUrl: buildUrl + "/orc-game.data.gz",
+        frameworkUrl: buildUrl + "/orc-game.framework.js.gz",
+        codeUrl: buildUrl + "/orc-game.wasm.gz",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Orco",
