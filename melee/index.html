@@ -3,17 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Melee</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <title>Beto Maluje | Melee</title>
+    <link rel="icon" href="../img/favicon/favicon.ico">
+    <link rel="shortcut icon" href="../img/favicon/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="TemplateData/UnityProgress.js"></script>
     <script src="Build/UnityLoader.js"></script>
     <script>
       var unityInstance = UnityLoader.instantiate("unityContainer", "Build/melee.json", {onProgress: UnityProgress});
     </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("button").click(function(){
+          $("#controls").toggle();
+        });
+      });
+    </script>
   </head>
   <body>
     <div class="webgl-content">
+      <div class="footer">     
+        <button>Toggle controls</button>   
+        <div id="controls" class="controls">
+          <p>Controls:</p>
+          <ul>
+            <li><strong>AS</strong>: move player horizontally</li>
+            <li><strong>W</strong>: Jump</li>
+            <li><strong>G</strong>: Perform item action</li>
+            <li><strong>T</strong>: Grab/throw item.</li>
+          </ul>
+      </div>
       <div id="unityContainer" style="width: 960px; height: 600px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
