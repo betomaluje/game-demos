@@ -9,6 +9,14 @@ $(function ($) {
     gameFrame.src = projectUrl;
   });
 
+  $('#portfolioModal1, #portfolioModal2, #portfolioModal3').on('hidden.bs.modal', function (event) {  
+    var modal = $(this);
+    var frame = modal.find('.iframe');
+
+    frame.src = "about:blank";
+    frame.contents().find("body").html('');
+  });
+
   $(".button1, .button2, .button3").click(function () {
     $("#controls1, #controls2, #controls3").toggle();
   });
