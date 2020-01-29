@@ -5,8 +5,15 @@ $(function($) {
       var projectUrl = view.data('url'); // Extract info from data-* attributes
       console.log("url: " + projectUrl);
 
-      var gameFrame = document.getElementById('unity-url');
+      var id = view.data('id'); // Extract info from data-* attributes
+      console.log("id: " + id);
+
+      var gameFrame = document.getElementById('unity-url' + id);
       gameFrame.src = projectUrl;
   });
+
+	$(".button1, .button2, .button3").click(function(){
+    	$("#controls1, #controls2, #controls3").toggle();
+  	});
 
 });

@@ -1723,6 +1723,31 @@ Portfolio Modals
   background-color: #212529;
 }
 
+.controls1, 
+.controls2, 
+.controls3 {
+  z-index: 10;
+  margin-top: 5px; 
+  font-family: Helvetica, Verdana, Arial, sans-serif; 
+  font-size: 12px;
+}
+
+.button1, 
+.button2, 
+.button3 {
+  background-color: #008CBA;
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  border-radius: 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 /* The End */
 
 /*# sourceMappingURL=style.css.map */

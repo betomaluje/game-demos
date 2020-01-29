@@ -1,6 +1,6 @@
 {
 "companyName": "DefaultCompany",
-"productName": "Orco",
+"productName": "Orc",
 "productVersion": "0.1",
 "dataUrl": "orc-game.data.unityweb",
 "wasmCodeUrl": "orc-game.wasm.code.unityweb",
