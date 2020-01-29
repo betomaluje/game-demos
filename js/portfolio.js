@@ -13,6 +13,8 @@ $(function ($) {
     var modal = $(this);
     var frame = modal.find('.iframe');
 
+    console.log('hiding modal ', frame);
+
     frame.src = "about:blank";
     frame.contents().find("body").html('');
   });
