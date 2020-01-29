@@ -13,12 +13,8 @@ $(function ($) {
 
   $('#portfolioModal1, #portfolioModal2, #portfolioModal3').on('hide.bs.modal', function (event) {  
     if (gameFrame == null) return;
-   
-    console.log('hiding modal ', gameFrame);
-
+  
     gameFrame.src = 'about:blank';   
-
-    console.log('hiding modal 2 ', gameFrame);
     gameFrame = null;
   });
 
